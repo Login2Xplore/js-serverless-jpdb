@@ -1,6 +1,6 @@
 # js-serverless-jpdb
 
-Complete following steps to use this Serverless JS applicaiton.
+[Complete following steps to use this Serverless JS applicaiton]
 
 1. Create a database user by clicking on http://api.login2explore.com:5577/user/register_dev.html link.
 
@@ -16,4 +16,8 @@ The above steps allow you to get Connection Token from the JPDB database.
 
 :)
 
-Explore the Easyness of Serverless development.
+Enjoy the effortless development of Serverless web application.
+
+Home: login2explore.com 
+
+Community: http://login2explore.com/community/
