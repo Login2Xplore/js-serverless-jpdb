@@ -5,8 +5,8 @@
 - The html files at root are kept as per the template used and are of no use to this example code.
 - The code in this example are created at folder '/jpdb' inside the 'public_html' folder.
 - This example will start from the project file '/public_html/jpdb/index.html' 
-    - i.e. the URL will be http://localhost:8383/jpdb/index.html for Netbeans users.
-    - or URL will be http://yourdomain:yourport/jpdb/index.html
+    - i.e. the URL will be localhost:8383/jpdb/index.html for Netbeans users.
+    - or URL will be yourdomain:yourport/jpdb/index.html
 
 
 
@@ -28,6 +28,6 @@ The above steps allow you to get Connection Token from the JPDB database.
 
 Enjoy the effortless development of Serverless web application.
 
-Home: login2explore.com 
+Home: http://login2explore.com 
 
 Community: http://login2explore.com/community/
