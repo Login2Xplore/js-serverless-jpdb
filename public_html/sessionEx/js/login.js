@@ -1,7 +1,7 @@
 window.onload = function ()
 {
-    closeConnection();
-    getConnectionToken();
+//    closeConnection();
+//    getConnectionToken();
     var sessionToken = localStorage.getItem('sessionToken');
     if (sessionToken !== null) {
         window.location.href = 'dashboard.html';
