@@ -73,7 +73,7 @@ var Script = function () {
                                 $("#reset-password-info").html('<b>Password changed. Please check your registered email-Id<b>').fadeIn().delay(4000).fadeOut();
                                 
                                 setTimeout(function () {
-                                window.location.href = "login.html";
+                                window.location.href = "index.html";
 
                             }, 6000);
 

@@ -64,7 +64,7 @@ var Script = function () {
                             $("#response_message").html('<div class="alert alert-block alert-info fade in"> Registered Successfully</div>').fadeIn().delay(4000).fadeOut();
 
                             setTimeout(function () {
-                                window.location.href = "login.html";
+                                window.location.href = "index.html";
 
                             }, 3000);
 

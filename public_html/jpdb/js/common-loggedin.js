@@ -8,7 +8,7 @@ function checkSession()
     var sessionToken = localStorage.getItem('sessionToken');
     if (sessionToken == null || token_dev == null)
     {
-        window.location.href = "login.html";
+        window.location.href = "index.html";
 
     }
 
@@ -28,7 +28,7 @@ function checkSession()
                 var message = obj['message'];
                 if (status === 400) {
                     localStorage.removeItem('sessionToken');
-                    window.location.href = "login.html";
+                    window.location.href = "index.html";
                 }
                 sessionFlag = true;
             }

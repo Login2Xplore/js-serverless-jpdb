@@ -27,7 +27,7 @@ function getConnectionToken() {
                                 + '</div>').fadeIn().delay(4000).fadeOut();
 
 
-//                        window.location.href = "login.html";
+//                        window.location.href = "index.html";
                     }
                 });
         $.ajaxSetup({async: true});
@@ -75,7 +75,7 @@ function myLogout()
     );
 
     localStorage.removeItem('sessionToken');
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 
 function sendEmail(token_dev, emailTo, emailCc, emailBcc, emailSubject, emailContent)
