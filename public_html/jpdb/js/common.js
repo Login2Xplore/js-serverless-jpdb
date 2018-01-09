@@ -1,17 +1,17 @@
 var baseURL = "http://dev1api.login2explore.com:5577";
-var userBaseURL = baseURL + "/user";
+var loginURL = baseURL + "/user";
 var DataBaseName = "CompanyInfo";
 var RelationName = "Users";
 
 function getConnectionToken() {
     var token_dev = localStorage.getItem('token_dev');
     if (token_dev == null) {
-        var email = "peterrrrr.parker@gmail.com";
+        var userID = "nunna2000@gmail.com";
         var password = "dfdfdf";
         $.ajaxSetup({async: false});
-        $.post(userBaseURL + "/login",
+        $.post(loginURL + "/login",
                 {
-                    email: email,
+                    email: userID,
                     password: password
                 },
                 function (result) {
@@ -22,8 +22,8 @@ function getConnectionToken() {
                         token_dev = obj['token'];
                         localStorage.setItem('token_dev', token_dev);
                     } else if (status === 400) {
-                        $("#response_message").html('<div class="alert alert-block alert-info fade in">' 
-                                + 'Connection Token not generated - Incorrect JPDB user or password' 
+                        $("#response_message").html('<div class="alert alert-block alert-info fade in">'
+                                + 'Connection Token not generated - Incorrect JPDB user or password'
                                 + '</div>').fadeIn().delay(4000).fadeOut();
 
 
@@ -41,7 +41,7 @@ function closeConnection() {
     localStorage.removeItem('token_dev');
     if (tempTokenConn != null) {
         $.ajaxSetup({async: false});
-        $.post(userBaseURL + "/logout",
+        $.post(loginURL + "/logout",
                 {
                     token: tempTokenConn
                 },
